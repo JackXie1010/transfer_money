@@ -73,6 +73,6 @@ class transMoney(BaseHandler):
         @self.validate_arg(['out_account_id', 'in_account_id', 'money'], arg)
         def handler(): return 1
         result = handler()
-        result = await self.ctrl_index.transMoney(arg) if 200 == result['code'] else 1
+        result = await self.ctrl_index.transMoney(arg) if 200 == result['code'] else {}
         self.finish_ok(**result)
 
