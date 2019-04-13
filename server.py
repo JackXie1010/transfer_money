@@ -18,7 +18,6 @@ settings = dict(
     gzip=True,
     debug=options.debug,
     cookie_secret="123",
-    xsrf_cookies=False,
     static_path=os.path.join(os.path.dirname(__file__), 'static'),
 )
 
